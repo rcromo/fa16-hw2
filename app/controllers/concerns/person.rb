@@ -8,21 +8,29 @@ class Person
 
   def nickname
     # YOUR IMPLEMENTATION HERE
-    'nickname'
+    return @name[0, 4]
   end
 
   def birth_year
     # YOUR IMPLEMENTATION HERE
-    1990
+    return Time.now.year - @age.to_i
   end
 
   def introduction
     # YOUR IMPLEMENTATION HERE
-    'introduce'
+    return "Hello, this is " + @name + " with " + @age + " years of life"
   end
 
   def fib_number
     # YOUR IMPLMENTATION HERE
-    0
+    age =  @age.to_i
+    def fib(n)
+      if n > 1
+        return fib(n-1) + fib(n-2)
+      else
+        return n
+      end
+    end
+    return fib(age)
   end
 end

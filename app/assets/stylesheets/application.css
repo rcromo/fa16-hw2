@@ -13,3 +13,21 @@
  *= require_tree .
  *= require_self
  */
+#name {
+	color: brown;
+}
+
+#where {
+	color: white;
+	background-color: green;
+}
+
+#ff {
+	color: red;
+	font-weight: bold;
+}
+
+#learn{
+	color: brown;
+	text-decoration: underline;
+}
